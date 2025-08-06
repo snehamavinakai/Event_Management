@@ -1,0 +1,190 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %}
+<!-- <link rel="stylesheet" href="{% static 'css/team.css' %}"> -->
+{% endblock %}
+
+{% block content %}
+<!-- Carousel -->
+<div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="{% static 'images/co1.jpg' %}" class="d-block w-100" alt="..." height="500px">
+        </div>
+    </div>
+
+    <div class="wpb_wrapper" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+        <p style="text-align: center;">Our event management expertise is well established in all kinds of corporate
+            events.</p>
+        <p style="text-align: center;">Depending on what you require we construct the event as needed from scratch and
+            provide you with cost effective prices that suit our clients budget criteria.</p>
+        <p style="text-align: center;">We have the latest technological solutions available to ease the clients event
+            planning woes.</p>
+        <p style="text-align: center;">We provide discounted pricing on hotels and design the entire event keeping the
+            objectives of our client in mind.</p>
+        <p style="text-align: center;">Basis the work done by us in the past, we have been able to categorize the events
+            we do in to 7 different categories.</p>
+        <p style="text-align: center;">Please click on the links below to see photos of our past work.</p>
+        <p>&nbsp;</p>
+    </div>
+
+    <!-- Cards -->
+    <div class="container text-center">
+        <div class="row">
+
+            <div class="col">
+                <h3 class="h-col me-5">AWARD CEREMONIES</h3>
+                <div class="card" >
+                    <img src="{% static 'images/co2.webp' %}" class="card-img-top" alt="..." width="25%" height="250px">
+                    <!-- <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div> -->
+                    <div class="wpb_wrapper">
+                        <p>We organize Product Launches for all industries</p>
+                        <p>Our up to date technology database allows us to combine and integrate different concepts to
+                            launch your product as impactfully as possible to the attending audiences.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <h3 class="h-col me-5">PRODUCT LAUNCHES</h3>
+                <div class="card" >
+                    <img src="{% static 'images/co3.jpg' %}" class="card-img-top" alt="..." width="25%" height="250px">
+                    <!-- <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div> -->
+                    <div class="wpb_wrapper">
+                        <P>We organize Product Launches for all industries.</P>
+                        <p>Award Ceremonies are a way of rewarding people for the efforts put and also positioning your
+                            company to become a thought leader amongst every one in the company eco-system.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                
+                <h3 class="h-col me-5">PARTIES</h3>
+                <div class="card"\>
+                    <img src="{% static 'images/co4.jpg' %}" class="card-img-top" alt="..." width="25%" height="250px">
+                    <!-- <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div> -->
+                    <div class="wpb_wrapper">
+                        <P>Corporate Parties need to be such  something to talk about and look
+                            forward to for the year to follow, and we make them such.</P>
+                        <p>We design themes & concepts after factoring in the audience profile and age group and suggest.
+                          </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container2 mt-3" style="background-color: orange;">
+        <div class="row">
+          <div class="col-6">
+            &nbsp;
+            <h2 class="ekit-heading--title ">
+              Make Your Events More Memorable
+            </h2>
+      
+      
+      
+      
+            <div class="ekit-heading__description-mr-2">
+              <p>A dream doesn’t become reality through magic; it takes sweat, determination and hard work.These are the
+                companies who gave the opportunity to bring their dreams in to reality.</p>
+            </div>
+          </div>
+      
+          <div class="col-6">
+            <div class="elementor-widget-container ml-5">
+              <br>
+              <br>
+              <br><br>
+              <center>
+      
+                <!-- <div class="ekit-wid-con">		
+                  <div class="ekit-btn-wraper">
+                        <a href="" rel="nofollow" class="elementskit-btn  whitespace--normal" hidefocus="true" style="outline: none;">
+                          Get a Quote
+                        </a>
+                         <div class="elementskit-btn whitespace--normal" hidefocus="true" style="outline: none; size:0px"> -->
+      
+                <!-- </div> -->
+      
+                <!-- Get a Quote -->
+                <div class="container">
+                  <button type="button" class="btn btn-danger btn-outline-success btn-lg" data-target="#mymodal"
+                    data-toggle="modal" style="border-radius: 30px 30px 30px 30px; color:Black;">Book Know</button>
+                    <br>
+                  <div class="modal fade" id="mymodal">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+      
+                          <h5 style="color: #2491d0;">MAKE AN APPOINTMENT</h5>
+                          <hr>
+      
+                          <button type="button" class="close" data-dismiss="modal"> &times; </button>
+      
+                        </div>
+                        <div class="modal-body">
+                          <form action="{% url 'corporate' %}" method="POST">
+                            {% csrf_token %}
+                            
+                              <div class="col mt-3">
+                                <!-- <label for="exampleFormControlInput1" class="form-label" style="float: left;">First Name</label> -->
+                                <input type="text" name="name" class="form-control" placeholder="Your name">
+                              </div>
+                            
+                              
+                                <div class="col mt-3">
+                                  <!-- <label for="exampleFormControlInput1" class="form-label" style="float: left;">First Name</label> -->
+                                  <input type="text" name="phone" class="form-control" placeholder="Phone">
+                                </div>
+      
+                                
+                                  <div class="col mt-3">
+                                    <!-- <label for="exampleFormControlInput1" class="form-label" style="float: left;">First Name</label> -->
+                                    <input type="email" name="email" class="form-control" placeholder="E-mail">
+                                  </div>
+      
+                                  <!-- <div class="row">
+                                    <div class="col mt-3">
+                                      <label for="exampleFormControlInput1" class="form-label" style="float: left;">First Name</label>
+                                      <input type="date" name="date" class="form-control" placeholder="Date">
+                                    </div>
+                                    <div class="col mt-3">
+                                      <label for="exampleFormControlInput1" class="form-label" style="float: left;">Last Name</label>
+                                      <input type="time" name="time" class="form-control" placeholder="Time">
+                                    </div>
+                                  </div> -->
+      
+                                  <div class="col mt-3">
+                                    <textarea name="message" id="message" cols="60" rows="8" placeholder="Message"></textarea>
+                                  </div>
+      
+                                  <button type="submit" class="btn btn-info mt-3">Submit</button>
+      
+                          </form>
+      
+                        </div>
+      
+                      </div>
+      
+                    </div>
+                  </div>
+                </div>
+      
+      
+            </div>
+      
+      
+            </center>
+          </div>
+        </div>
+    {% endblock %}

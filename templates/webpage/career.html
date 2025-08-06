@@ -1,0 +1,132 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %}
+ <link rel="stylesheet" href="{% static 'css/career.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<div id="carouselExampleDark" class="carousel carousel-dark slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'images\c1.jpg' %}" class="d-block w-100" alt="..." height="400px" >
+        <div class="carousel-caption d-none d-md-block">
+          <h2 style="margin-bottom: 180px"> <b>Work with Us</b> </h2>
+        </div>
+      </div>
+    </div>
+</div>
+    <center>
+    <h2>Dream with us <br>
+    Join us to meet your dream and sharpen your career in the Events Industry!</h2>
+  </center>
+
+  <div class="container mt-3" >
+    <div class="row">
+        <div class="col-md-6">
+            <h2 class="elementor-heading-title elementor-size-default">Dreams Events is among India's top 10 fast growing Event Management Company.  
+                We are passionate, structured, systematic and process driven in all that we do! Your career goal &amp; our Company goals are meant for mutual growth.  Our current talent requirements are in Client Servicing, Creatives (Designers), Sales &amp; Marketing, Production, Operations &amp; Corporate Gifting.
+                We are open to accept passion driven talents with 0 - 15 years of experience, with any qualification. 
+                Please send your latest resume to hr@deands.com or upload (pdf/docx) here.</h2>
+        </div>
+
+        <div class="col-md-6">
+            <img src="{% static 'images\c2.jpg' %}" alt="" width="100%" height="400px" style="box-shadow:  0 0 10px 0 rgb(121, 118, 118);">
+        </div>
+    </div>
+  </div>
+
+<div class="boxing mt-3">
+
+<div class="row">
+  
+  <div class="col-md-6" style="align-items: center;">
+    <center>
+    <div class="rectangle">
+      
+    <form action="{% url 'career' %}" method="POST">
+      {% csrf_token %}
+      
+      <p>
+        <label> YOUR NAME (required):<br>
+          <span class="wpcf7-form-control-wrap" data-name="your-name">
+            <input type="text" name="name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" hidefocus="true" style="outline: none;">
+          </span> 
+        </label>
+      </p>
+    <p>
+      <label> YOUR EMAIL (required):<br>
+      <span class="wpcf7-form-control-wrap" data-name="your-email">
+        <input type="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" hidefocus="true" style="outline: none;">
+      </span> 
+    </label>
+  </p>
+  
+  <p> 
+    <label> Upload Resume:<br>
+        <span class="wpcf7-form-control-wrap" data-name="file">
+          <input type="file" name="file" size="50" class="wpcf7-form-control wpcf7-file bg-white p-2" accept=".pdf,.word,.jpeg,.png" aria-required="true" aria-invalid="false" hidefocus="true" style="outline: none;">
+        </span> 
+      
+    </label>
+  </p>
+  <p>
+    <label> YOUR MESSAGE:<br>
+      <span class="wpcf7-form-control-wrap" data-name="your-message">
+        <textarea name="message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" hidefocus="true" style="outline: none;"></textarea>
+      </span> 
+    </label>
+  </p>
+  <button class="btn btn-info">Submit</button>
+  
+    </form>
+    </div>
+  </center>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<div class="container2 mt-3" >
+  <div class="row">
+    <div class="col-6">
+      <h2 class="ekit-heading--title mr-3">
+        Make Your Events More Memorable
+      </h2>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;
+
+      <div class="ekit-heading__description">
+        <p>A dream doesn’t become reality through magic; it takes sweat, determination and hard work.These are the companies who gave the opportunity to bring their dreams in to reality.</p>
+      </div>
+    </div>
+
+    <div class="col-6">
+      <div class="elementor-widget-container ml-5" >
+        <br>
+        <br>
+        <br><br><br><br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <center>
+        <button type="button" class="btn btn-danger btn-outline-success btn-lg" data-target="{% url 'contact' %}"
+              data-toggle="modal" >
+                <a  href="{% url 'contact' %}" style="border-radius: 30px 30px 30px 30px; color: black; text-decoration: none;">
+              Get in touch!
+            </a>
+            </button>
+          </center>
+          </div>		</div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

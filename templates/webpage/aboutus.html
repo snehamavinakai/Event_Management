@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %}
+ <link rel="stylesheet" href="{% static 'css/about.css' %}">
+{% endblock %}
+
+{% block content %}
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'images\a3.jpg' %}" class="d-block w-100" alt="..." height="500px" >
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row mt-3">
+      <div class="col-md-6">
+        <h3 class="elementskit-section-subtitle">
+          Explore Our Expert
+        </h3>
+        
+        <h2 class="head">
+          
+          We Make Events To Remember
+          
+        </h2>
+
+        <p class="p1">We are here to create memorable and successful events that exceed our client’s expectations, 
+          nurture relationships and delight the senses – one client, one event, one experience at a time.</p>
+        <br>
+          <a href="{% url 'our_work' %}" rel="nofollow" class="elementskit-btn  btn-outline-success mt-3 whitespace--normal text-decoration-none" hidefocus="true" style="outline: none;">
+					Learn more 				</a>
+      </div>
+         <br>
+      <div class="col-md-6" >
+        
+        <img src="{% static 'images\a2.jpg' %}" alt="" style="box-shadow: 0 0 10px 0 rgb(3, 3, 3);">
+      </div>
+    </div>
+  </div>
+
+
+
+{% endblock %}

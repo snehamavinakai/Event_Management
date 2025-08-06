@@ -1,0 +1,75 @@
+.social-icon{
+    size: 0ch;
+    size: 100px;
+    text-decoration: none;
+    color: #3b5998;
+    
+   
+}
+
+.social-icon:hover{
+    transform: scale(1.05);
+    color: rgb(87, 84, 86);;
+}
+
+.social-twitt{
+    size: 0ch;
+    size: 100px;
+    text-decoration: none;
+    color: rgb(47, 199, 226);
+   
+}
+
+.social-twitt:hover{
+    transform: scale(1.05);
+    color: rgb(87, 84, 86);
+}
+
+.social-insta{
+    size: 0ch;
+    size: 100px;
+    text-decoration: none;
+    color: rgb(196, 28, 37);
+   
+}
+
+.social-insta:hover{
+    transform: scale(1.05);
+    color: rgb(87, 84, 86);
+}
+
+.social-yt{
+    size: 0ch;
+    size: 100px;
+    text-decoration: none;
+    color: red;
+   
+}
+
+.social-yt:hover{
+    transform: scale(1.05);
+    color: rgb(122, 120, 122);
+}
+
+.social-goog{
+    size: 0ch;
+    size: 100px;
+    text-decoration: none;
+    color: rgb(224, 206, 37);
+   
+   
+}
+
+.social-goog:hover{
+    transform: scale(1.05);
+    color: rgb(112, 108, 111);
+
+}
+
+circle{
+    height: 50px;
+  width: 50px;
+  background-color: #555;
+  border-radius: 50%;
+}
+

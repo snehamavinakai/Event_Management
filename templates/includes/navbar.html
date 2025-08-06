@@ -1,0 +1,80 @@
+{% load static %}
+<style>
+  nav .nav-item .nav-link:hover {
+    background: red;
+    color: white;
+    border-radius: 10%;
+  }
+</style>
+<nav class="navbar navbar-expand-lg" style="justify-content:end; background-color: rgb(8, 1, 29)">
+  <div class="container-fluid" style="justify-content:end; background-color: rgb(8, 1, 29)">
+    <a class="navbar-brand" href="">
+      <!-- <img src="{% static './media' %}" alt="logo"> -->
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent"
+      style="justify-content:end; background-color: rgb(8, 1, 29)">
+      <h6 class="h1" style="justify-content:left; color:rgb(243, 247, 248); font-family: 'Tangerine', serif;">
+        <i>Beventful</i>
+      </h6>
+      <ul class="navbar-nav">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <li class="nav-item me-3 ">
+          <a class="nav-link active " href="{% url 'home' %}" hidefocus="true" style="color: white;">Home</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="{% url 'aboutus' %}" style="color: white;">About us</a>
+        </li>
+       
+
+        <li class="nav-item dropdown me-3">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" style="color: white;"
+            aria-expanded="false">
+            What We do
+          </a>
+          <ul class="dropdown-menu ">
+            <!-- <li><a class="dropdown-item" onMouseOver="this.style.color='red'" onMouseOut="this.style.color='black'"
+                href="{% url 'conference' %}">Conference</a>
+              <hr>
+            </li> -->
+            <li><a class="dropdown-item" onMouseOver="this.style.color='red'" onMouseOut="this.style.color='#00F'"
+                href="{% url 'corporate' %}">Corporate</a>
+              <hr>
+            </li>
+            <li><a class="dropdown-item" onMouseOver="this.style.color='red'" onMouseOut="this.style.color='black'"
+                href="{% url 'wedding' %}">Wedding</a>
+              <hr>
+            </li>
+            <li><a class="dropdown-item" onMouseOver="this.style.color='red'" onMouseOut="this.style.color='black'"
+                href="{% url 'birth_day' %}">Brith Day Party</a></li>
+
+
+          </ul>
+        </li>
+        <li class="nav-item me-3">
+          <a class="nav-link" href="{% url 'our_work' %}" style="color: white;">Our Work</a>
+        </li>
+        <li class="nav-item me-3">
+          <a class="nav-link" href="{% url 'team' %}" style="color: white;">Team</a>
+        </li>
+        <li class="nav-item me-3">
+          <a class="nav-link" href="{% url 'career' %}" style="color: white;">Career</a>
+        </li>
+        <li class="nav-item me-3">
+          <a class="nav-link" href="{% url 'contact' %}" style="color: white;">Contact</a>
+        </li>
+      </ul>
+      <!-- <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form> -->
+    </div>
+  </div>
+</nav>

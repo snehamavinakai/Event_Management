@@ -1,0 +1,101 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(252, 247, 247);
+    color: rgb(5, 5, 5);
+}
+.element-heading{
+    color: rgb(4, 4, 39);
+    font-size: 50px;
+}
+
+.element-para{
+    font-family: 'Kanit';
+    
+}
+
+.btn-info{
+    width: 50%;
+    letter-spacing: 3px;
+    background: transparent;
+}
+
+.btn-info:hover{
+    transform: scale(1.05);
+}
+
+.social-icon{
+    size: 0ch;
+    size: 100px;
+    text-decoration: none;
+    color: #3b5998;
+    
+   
+}
+
+
+
+.social-icon:hover{
+    transform: scale(1.05);
+    color: rgb(87, 84, 86);
+}
+
+.social-twitt{
+    size: 0ch;
+    size: 100px;
+    text-decoration: none;
+    color: #54bef0;
+   
+}
+
+.social-twitt:hover{
+    transform: scale(1.05);
+    color: rgb(87, 84, 86);
+}
+
+.social-insta{
+    size: 0ch;
+    size: 100px;
+    text-decoration: none;
+    color: rgb(218, 161, 86);
+   
+}
+
+.social-insta:hover{
+    transform: scale(1.05);
+    color: rgb(87, 84, 86);
+}
+
+.social-yt{
+    size: 0ch;
+    size: 100px;
+    text-decoration: none;
+    color: red;
+   
+}
+
+.social-yt:hover{
+    transform: scale(1.05);
+    color: rgb(122, 120, 122);
+}
+
+.social-goog{
+    size: 0ch;
+    size: 100px;
+    text-decoration: none;
+    color: rgb(224, 211, 37);
+   
+   
+}
+
+.social-goog:hover{
+    transform: scale(1.05);
+    color: rgb(112, 108, 111);
+
+}
+
+circle{
+    height: 50px;
+  width: 50px;
+  background-color: #555;
+  border-radius: 50%;
+}

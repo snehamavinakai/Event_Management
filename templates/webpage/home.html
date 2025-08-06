@@ -1,0 +1,224 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<link rel="icon" href="https://deands.com/wp-content/uploads/2020/10/cropped-PHOTO-2020-10-20-13-08-13-32x32.jpg" sizes="32x32">
+<link rel="icon" href="https://deands.com/wp-content/uploads/2y020/10/cropped-PHOTO-2020-10-20-13-08-13-192x192.jpg" sizes="192x192">
+
+{% block css %}
+ <link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<!-- carosule -->
+<div id="carouselExampleFade" class="carousel slide carousel-fade">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'images/h1.jpg' %}" class="d-block w-100" alt="..." height="500px" >
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/z1.jpg' %}" class="d-block w-100" alt="..." height="500px">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/z3.jpg' %}" class="d-block w-100 " alt="..." height="500px">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+  <div class="container mt-3" >
+    <div class="row">
+        <div class="col-md-6">
+            <h3 class="elementskit-section-subtitle  mt-3">
+                Explore our expert
+            </h3>
+
+            <h2 class="ekit-heading--title elementskit-section-title ">
+                Welcome To beventful Events &amp; Services! 
+            </h2>
+            <br>
+            <strong id="s1">Dream. Design. Deliver.</strong>
+
+            <p id="p1">We take the responsibility of making your dream a reality!</p>
+        </div>
+      <div class="col-md-6">
+        <img src="{% static 'images\h5.jpg' %}" alt="" height="500px" width="500px" style="float: right; box-shadow:  0 0 10px 0 rgb(121, 118, 118);">
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row mt-3">
+      <div class="col-md-6">
+        <img src="{% static 'images\h6.jpg' %}" alt="" height="500px" width="500px" style="float: left; box-shadow:  0 0 10px 0 rgb(121, 118, 118);">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
+
+      <div class="col-md-6" >
+        <p class="p2">We are Corporate Event Planners and one of the Best Event Management Company in Gadag with our 
+          services available PAN India. Our forte lies in delivering cutting edge, innovative and professional event management 
+          services. We are a bunch of fun loving, energetic and passionate people working towards the common goal of providing exceptional services. 
+          From inspirational ideas to stunning productions, strong themes and creative programs, we do everything to create memorable experiences and 
+          branding opportunities that exceed customer expectations. 
+          We take pride in presenting ourselves as one of the best in the industry.</p>
+        
+          <p class="p3">We offer a wide range of event management services. Be it a Virtual conference, Award ceremony, Product launch, 
+            Family event or Sports event, we have you covered. 
+            We are a one stop solution to all your corporate situations.</p>
+      </div>
+    </div>
+  </div>
+
+<div class="container1 mt-5">
+  <h3 class="elementskit-section-subtWe Doitle ">
+              <center>What We Do</center>
+              <h2 class="ekit-heading--title elementskit-section-title ">
+                  <center>We do it <color style="color: rgb(233, 70, 97);"><i>best</i></color>
+                    <p id="p4">We are here to create memorable and successful events that exceed our client’s expectations, nurture <br>
+                      relationships and delight the senses – one client, one event, one experience at a time.</p>
+                  </center>
+              </h2>
+  </h3>
+</div>
+<!-- cards -->
+<div class="container text-center">
+  <div class="row">
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+  <img src="{% static 'images\h8.jpg' %}" class="card-img-top" alt="..." width="100px" height="190px" >
+  <div class="card-body">
+    <h5 class="card-title">Conference and Corporate Events</h5>
+    <p class="card-text">We offer Conference management services that are technologically in par with corporate industry 
+      standards and handle MICE( Meetings, Conferences, Exhibition).</p>
+    
+  </div>
+</div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+  <img src="{% static 'images\h11.png' %}" class="card-img-top" alt="..." width="100px" height="190px" > 
+  <div class="card-body">
+    <h5 class="card-title">Product Launches, Activations & Road Shows</h5>
+    <p class="card-text">We cater to Product Activations, Branding, Marketing, Experiential Events and Roadshows
+      Seamless execution and creative ideas and the perfect launch program
+    </p>
+    
+  </div>
+</div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+  <img src="{% static 'images\h7.jpg' %}" class="card-img-top" alt="..." width="100px" height="190px">
+  <div class="card-body">
+    <h5 class="card-title">Concerts, Artist management & Sports management</h5>
+    <p class="card-text">we have extensive experience handling celebrities, tech riders and Artists. Our database has a 
+      wide range of celebrity contacts.</p>
+    
+  </div>
+</div>
+    </div>
+  </div>
+</div>
+<div class="container1 mt-5">
+  <h3 class="elementskit-section-subtWe Doitle ">
+              
+              <h2 class="ekit-heading--title elementskit-section-title ">
+                  <center>Why  <color style="color: rgb(233, 70, 97);"><i>choose us?</i></color>
+                    <p id="p4"> We listen. We create. We deliver.</p></center>
+              </h2>
+  </h3>
+</div>
+
+<div class="container">
+  <div class="row mt-3">
+    <div class="col-md-6">
+      <img src="{% static 'images\h6.jpg' %}" alt="" height="500px" width="500px" style="float: left; box-shadow:  0 0 10px 0 rgb(121, 118, 118);">
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+
+    <div class="col-md-6" >
+      <div class="elementskit-infobox text- text-left icon-lef-right-aligin elementor-animation- media  ">
+        <div class="elementskit-box-header elementor-animation-">
+    <div class="elementskit-info-box-icon  text-center">
+      
+    </div>
+</div>
+            <div class="box-body mt-3">
+              
+                <h3 class="elementskit-info-box-title">
+                  
+                
+        We are accommodating                </h3>
+                  <p>								We understand the passion our clients have, towards their events. We love every new challenge and accommodate even your last minute changes to make your event a grand success within the given budget! 									</p>
+                    </div>
+                    <div class="box-body mt-3">
+                      <h3 class="elementskit-info-box-title">
+              We deliver only the best                </h3>
+                        <p>					We ain’t all talk and no show. Rather, we love to put on a show for you and make the events talk for you! We thrive on listening to happy customers.</p>
+                          </div>
+
+                          <div class="box-body mt-3">
+                            <h3 class="elementskit-info-box-title">
+                    We are good listeners                </h3>
+                        		  <p>					We understand the passion our clients have towards their events. We love every new challenge to make our client’s unique dream a reality.</p>
+                                </div>
+
+    </div>
+       
+         
+          
+    </div>
+
+    
+  </div>
+</div>
+<!-- Cards -->
+<div class="container text-center">
+  <div class="row slider">
+    {% for c in card %}
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+          <p class="card-text">{{c.desc}}</p>
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+</div>
+
+<!-- <div class="container-1 mt-3">
+  <div class="row slider">
+    {% for c in card %}
+    <div class="col">
+        <div class="card" style="width: 18rem;">
+        <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+      <p class="card-text">{{c.desc}}</p>
+    </div>
+  </div>
+</div>
+  {% endfor %}
+</div>
+</div> -->
+ <br>
+<center>
+  <h2 mt-3>
+    <b>Locate Us</b>
+  </h2>
+</center>
+
+<br>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d984644.4529813577!2d75.09882652197014!3d15.41611279552462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb8f9421f866bb9%3A0x4249c83813586308!2sGadag%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1672898383347!5m2!1sen!2sin" width="100%" height="200px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+{% endblock %}

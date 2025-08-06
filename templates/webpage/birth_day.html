@@ -1,0 +1,302 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- Carousel -->
+<div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'images\b1.jpg' %}" class="d-block w-100" alt="...">
+
+      <div class="carousel-caption d-none d-md-block">
+        <!-- <img src="{% static 'images\b01.jpg' %}" alt=""> -->
+        <!-- &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; -->
+
+        <!-- <img class="animate__animated animate__backInRight  " src="{% static 'images\b01.png' %}" alt="" style="padding-right: -1px;"  > -->
+
+
+        <!-- <h3 class="sp-layer animate__animated animate__backInLeft" style="top: 20%; justify-content:right; padding: -10px; "> 
+          We Create You Celebrate
+        </h3> -->
+
+        <!-- <h5 class="sp-layer animate__animated animate__backInRight" style="top: 40%; justify-content:left; padding:-10px "> Planning a Birthday Party in our busy city is not so easy, <br>
+          and it takes skills and time to make it all look easy-going </h5> -->
+        <div class="b-image animate__animated animate__backInRight" style="float: right;">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src="{% static 'images\b01.png' %}" alt="">
+        </div>
+        <!-- &nbsp;&nbsp; -->
+        <div class="b-heading animate__animated animate__backInLeft">
+          <br><br><br><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <h3 style="color: #560D19; font-size:40px ; display:flex">
+            We Create You Celebrate
+          </h3>
+
+          <h5 style="color: #A8003D; font: size 18px; text-transform:uppercase; font-weight:bold;"> Planning a Birthday
+            Party in our busy city is not so easy,
+            and it takes skills and time to make it all look easy-going </h5>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+</div>
+
+<!-- services -->
+<div class="services mt-3" id="services">
+  <div class="row">
+    <div class="col-3  service bg-danger ">
+      <!-- <a href="Balloon-Decoration.html"> -->
+      <center>
+        <div class="service-icon"><img src="{% static 'images\b3.png' %}" alt="Balloon Decoration"></div>
+        <div class="service-title">
+          <h4 class="text-white">BALLOON DECORATIONS</h4>
+        </div>
+      </center>
+      <!-- </a>  -->
+    </div>
+    <div class="col-3  service " style="background-color: #6fbc20;">
+      <!-- <a href="themes.html"> -->
+      <center>
+        <div class="service-icon">
+          <img src="{% static 'images\b4.png' %}" alt="Theme Party in Bangalore">
+        </div>
+        <div class="service-title">
+          <h4 class="text-white">THEME PARTIES</h4>
+        </div>
+      </center>
+      <!-- </a>  -->
+    </div>
+    <div class="col-3  service" style="background-color: #2c489a;">
+      <!-- <a href="artist-management.html"> -->
+      <center>
+        <div class="service-icon">
+          <img src="{% static 'images\b5.png' %}" alt="Artist Management for Birthday Party">
+        </div>
+        <div class="service-title">
+          <h4 style="text-transform: uppercase;">artist's for birthday parties</h4>
+        </div>
+      </center>
+      <!-- </a>  -->
+    </div>
+    <div class="col-3  service bg-child-4" style="background-color: #cd095e;">
+      <!-- <a href="fun-eatables.html"> -->
+      <center>
+        <div class="service-icon">
+          <img src="{% static 'images\b6.png' %}" alt="Fun Eatables for Birthday Party">
+        </div>
+        <div class="service-title">
+          <h4 style="text-transform: uppercase;">eatables for birthday parties</h4>
+        </div>
+      </center>
+      <!-- </a>  -->
+    </div>
+  </div>
+</div>
+
+<div class="container mt-3">
+  <div class="row">
+    <div class="col-md-6">
+      <h2 class="section-title">
+        <!-- <span class="bold700"> -->
+        Theme
+        <!-- </span>  -->
+        Party Planners
+      </h2>
+
+      <p><em><strong>Birthday Party Organisers</strong></em> for every budget,
+        for children of every age with a guarantee that not as single moment would be dull.
+        We will be your partners in your child's birthday events making it an extraordinary event that would impress one
+        and all. Being tech-savvy,
+        we have an acute eye for looking up for the latest developments in the world and infuse them into your parties
+        to make it an avant-garde event.
+        Birthday parties have a special importance in each child's life and we promise to make your child's birthday
+        party distinctive and unforgettable. </p>
+    </div>
+
+    <div class="col-md-6">
+      <img src="{% static 'images\b7.jpg' %}" alt="" width="120%" height="400px">
+    </div>
+  </div>
+</div>
+
+<br>
+
+
+<!-- carosule -->
+<div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="cards-wrapper">
+        <div class="card" style="width: 18rem;">
+          <img src="..." class="card-img-top" alt="...">
+          <!-- <div class="card-body">
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div> -->
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="cards-wrapper">
+        <div class="card" style="width: 18rem;">
+          <img src="..." class="card-img-top" alt="...">
+          <!-- <div class="card-body">
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div> -->
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="cards-wrapper">
+        <div class="card" style="width: 18rem;">
+          <img src="..." class="card-img-top" alt="...">
+          <!-- <div class="card-body">
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <div class="cards-wrapper">
+        <div class="card" style="width: 18rem;">
+          <img src="..." class="card-img-top" alt="...">
+          <!-- <div class="card-body">
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+    data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+    data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+
+
+
+
+<div class="container2 mt-3" style="background-color: #6fbc20;">
+  <div class="row">
+    <div class="col-6">
+      &nbsp;
+      <h2 class="ekit-heading--title ">
+        Make Your Events More Memorable
+      </h2>
+
+
+
+
+      <div class="ekit-heading__description-mr-2">
+        <p>A dream doesn’t become reality through magic; it takes sweat, determination and hard work.These are the
+          companies who gave the opportunity to bring their dreams in to reality.</p>
+      </div>
+    </div>
+
+    <div class="col-6">
+      <div class="elementor-widget-container ml-5">
+        <br>
+        <br>
+        <br><br>
+        <center>
+
+          <!-- <div class="ekit-wid-con">		
+            <div class="ekit-btn-wraper">
+                  <a href="" rel="nofollow" class="elementskit-btn  whitespace--normal" hidefocus="true" style="outline: none;">
+                    Get a Quote
+                  </a>
+                   <div class="elementskit-btn whitespace--normal" hidefocus="true" style="outline: none; size:0px"> -->
+
+          <!-- </div> -->
+
+          <!-- Get a Quote -->
+          <div class="container">
+            <button type="button" class="btn btn-danger btn-outline-success btn-lg" data-target="#mymodal"
+              data-toggle="modal" style="border-radius: 30px 30px 30px 30px; color:Black;">Book Know</button>
+              <br>
+            <div class="modal fade" id="mymodal">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+
+                    <h5 style="color: #2491d0;">MAKE AN APPOINTMENT</h5>
+                    <hr>
+
+                    <button type="button" class="close" data-dismiss="modal"> &times; </button>
+
+                  </div>
+                  <div class="modal-body">
+                    <form action="{% url 'birth_day' %}" method="POST">
+                      {% csrf_token %}
+                      
+                        <div class="col mt-3">
+                          <!-- <label for="exampleFormControlInput1" class="form-label" style="float: left;">First Name</label> -->
+                          <input type="text" name="name" class="form-control" placeholder="Your name">
+                        </div>
+                      
+                        
+                          <div class="col mt-3">
+                            <!-- <label for="exampleFormControlInput1" class="form-label" style="float: left;">First Name</label> -->
+                            <input type="text" name="phone" class="form-control" placeholder="Phone">
+                          </div>
+
+                          
+                            <div class="col mt-3">
+                              <!-- <label for="exampleFormControlInput1" class="form-label" style="float: left;">First Name</label> -->
+                              <input type="email" name="email" class="form-control" placeholder="E-mail">
+                            </div>
+
+                            <!-- <div class="row">
+                              <div class="col mt-3">
+                                <label for="exampleFormControlInput1" class="form-label" style="float: left;">First Name</label>
+                                <input type="date" name="date" class="form-control" placeholder="Date">
+                              </div>
+                              <div class="col mt-3">
+                                <label for="exampleFormControlInput1" class="form-label" style="float: left;">Last Name</label>
+                                <input type="time" name="time" class="form-control" placeholder="Time">
+                              </div>
+                            </div> -->
+
+                            <div class="col mt-3">
+                              <textarea name="message" id="message" cols="60" rows="8" placeholder="Message"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-info mt-3">Submit</button>
+
+                    </form>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+      </div>
+
+
+      </center>
+    </div>
+  </div>
+
+  {% endblock %}
