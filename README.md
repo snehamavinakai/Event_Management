@@ -84,6 +84,7 @@ pip install django
 ### 4. Run Migrations
 
 python manage.py makemigrations
+
 python manage.py migrate
 
 ### 5. Start Development Server
